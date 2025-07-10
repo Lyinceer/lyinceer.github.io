@@ -1,0 +1,69 @@
+button.home-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+
+.home-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.home-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(0, 255, 255, 0.7),
+    0 0 45px rgba(0, 200, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover img {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.95),
+    0 0 50px rgba(0, 255, 255, 0.85),
+    0 0 75px rgba(0, 200, 255, 0.8);
+}
+
+/* ====== RESPONSIVE SIZES ====== */
+
+/* Mobile */
+@media (max-width: 768px) {
+  .home-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .home-button {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* Desktop (Default) */
+@media (min-width: 1024px) {
+  .home-button {
+    width: 60px;
+    height: 60px;
+  }
+}

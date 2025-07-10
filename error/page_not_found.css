@@ -1,0 +1,176 @@
+/*======================
+    404 Page – Fixed
+=======================*/
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.page_404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 1rem;
+  background: #fff;
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+/* Mobile + Tablet: Vertically centered but slightly above */
+@media (max-width: 1023px) {
+  .page_404 {
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 10vh; /* Slightly above center */
+  }
+}
+
+/* Desktop: Default (top-aligned) */
+@media (min-width: 1024px) {
+  .page_404 {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 180%;
+  max-width: 1500px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 20px;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+  color: #3b3b3b;
+  margin-top: 0;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 40px;
+  color: #000000de;
+  margin-top: 10px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 12px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.contant_box_404 {
+  margin-top: 10px;
+  padding: 0 1rem;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .four_zero_four_bg {
+    max-width: 120vw;
+    position: relative;
+    left: -74px;
+    top: -50px;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 55px;
+    position: relative;
+    top: 10px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 23px;
+  }
+
+  .contant_box_404 {
+    position: relative;
+    top: -110px;
+  }
+
+  .contant_box_404 h3 {
+    font-size: 20px;
+  }
+
+  .link_404 {
+    font-size: 0.9rem;
+    padding: 11px 17px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .four_zero_four_bg {
+    max-width: 120vw;
+    position: relative;
+    left: -190px;
+    top: -50px;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 95px;
+    position: relative;
+    top: 30px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 34px;
+  }
+
+  .contant_box_404 {
+    position: relative;
+    top: -170px;
+  }
+
+  .contant_box_404 h3 {
+    font-size: 30px;
+  }
+
+  .link_404 {
+    font-size: 1.4rem;
+    padding: 13px 18px;
+  }
+}
+
+
+/* Desktop enhancements */
+@media (min-width: 1024px) {
+  .contant_box_404 {
+    position: relative;
+    top: -226px;
+  }
+
+  .four_zero_four_bg {
+    max-width: 1062px;
+    position: relative;
+    top: -78px;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 80.7px;
+    position: relative;
+    top: 96px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 32px;
+  }
+
+  .link_404 {
+    font-size: 1.4rem;
+    padding: 13px 18px;
+  }
+}

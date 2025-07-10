@@ -1,0 +1,63 @@
+/* Modal Overlay */
+.help-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(11px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Box */
+.help-modal {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Close Button */
+.help-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modal Text & Link */
+.help-modal__text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.help-modal__link {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.help-modal__link:hover {
+  text-decoration: none;
+}
+
+/* Active state */
+.help-modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}

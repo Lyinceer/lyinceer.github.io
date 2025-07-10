@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  >
+  <link rel="preload" as="image" href="../components/background/bg2.jpg">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="../about-me/style.css">
+  <link rel="stylesheet" href="../components/buttons/home/home-button.css">
+  <title>About Me</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="main-page">
+    <img src="../components/background/bg2.jpg" class="main__img" alt="Background">
+    <div class="container">
+      <button type="button" class="home-button">
+        <img src="../components/icons/home/home.png" alt="Home" />
+      </button>
+      <div class="profile-image">
+        <img src="../profile/image2.png" alt="Profile" class="glow-img">
+      </div>
+      <div class="container-content">
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm Steve,<br />
+            I'm not particularly ambitious, but I tend to follow through when something captures my interest, which is rare.<br /><br />
+            Android development caught my attention, so I built a custom TWRP recovery for<br />
+            <a href="https://github.com/Lyinceer/twrp_device_samsung_a55x" target="_blank" style="color: rgb(0, 110, 255); text-decoration: underline;">Galaxy A55</a>
+            out of my own curiosity. It wasn’t for recognition, just curiosity and the satisfaction of solving something technical.<br /><br />
+            I’ve also created a Telegram AI chatbot. It works. That’s enough for me.<br />
+            I don’t chase trends or build things for applause. I do it if it matters — to me.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../components/scripts/about-me-button.js"></script>
+  <script src="../components/scripts/home-button.js"></script>
+  <script src="../components/scripts/animations-mouse-trail.js"></script>
+  <script>
+    const folder = "../components/animations/cursor/Animated-cursor/cursor7";
+    const frameCount = 3;
+    const frames = [];
+
+    for (let i = 1; i <= frameCount; i++) {
+      frames.push(`${folder}/frame${i}.png`);
+    }
+
+    let index = 0;
+    const fps = 10;
+
+    setInterval(() => {
+      document.body.style.cursor = `url(${frames[index]}), auto`;
+      index = (index + 1) % frames.length;
+    }, 2000 / fps);
+  </script>
+</body>
+</html>

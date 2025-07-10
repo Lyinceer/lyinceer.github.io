@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./main/style.css">
+  <link rel="stylesheet" href="./main/help.css">
+  <link rel="stylesheet" href="./components/buttons/style.css">
+  <link rel="stylesheet" href="./components/buttons/about-me/button.css">
+  <link rel="stylesheet" href="./components/buttons/repo/button.css">
+  <link rel="stylesheet" href="./components/buttons/game/button.css">
+  <link rel="stylesheet" href="./profile/style.css">
+  <link rel="stylesheet" href="./components/buttons/question-mark/question-mark.css">
+  <title>Lyinceer here!</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="main-page">
+    <img src="./components/background/bg.jpg" class="main__img" alt="Background">
+    <form action="" class="container">
+      <div class="profile-image">
+        <img src="./profile/image.png" alt="Profile" class="glow-img">
+      </div>
+      <div class="container-content">
+        <div class="welcome-block">
+          <h1 class="main__title">Welcome!</h1>
+          <div class="button-container">
+            <button type="button" class="question-mark" id="open-help-modal">
+              <img src="./components/icons/question-mark/question-mark.png" alt="Help" />
+            </button>
+            <div class="btn-wrapper">
+              <img src="./components/icons/arrow/arrow-right.png" alt="Right Arrow" class="btn-arrow outside-arrow left">
+              <button type="button" class="btn btn-about">About Me</button>
+              <img src="./components/icons/arrow/arrow-left.png" alt="Left Arrow" class="btn-arrow outside-arrow right">
+            </div>
+            <div class="btn-wrapper">
+              <img src="./components/icons/arrow/arrow-right.png" alt="Right Arrow" class="btn-arrow outside-arrow left">
+              <a href="./components/animations/loading/index.html?redirect=repositories" class="btn btn-repo" target="_blank">
+                Repositories
+              </a>
+              <img src="./components/icons/arrow/arrow-left.png" alt="Left Arrow" class="btn-arrow outside-arrow right">
+            </div>
+            <div class="btn-wrapper">
+              <img src="./components/icons/arrow/arrow-right.png" alt="Right Arrow" class="btn-arrow outside-arrow left">
+              <button type="button" class="btn btn-game">Do you want to play a game?</button>
+              <img src="./components/icons/arrow/arrow-left.png" alt="Left Arrow" class="btn-arrow outside-arrow right">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Help Overlay -->
+  <div class="help-modal-overlay" id="helpModal">
+    <div class="help-modal">
+      <button class="help-modal__close" id="closeHelpModal">&times;</button>
+        <p class="help-modal__text">
+          Do you have any questions or need any help? You can DM
+            <a href="https://t.me/zwran" target="_blank" class="help-modal__link">me</a>.
+        </p>
+    </div>
+  </div>
+  <script src="./components/scripts/about-me-button.js"></script>
+  <script src="./components/scripts/game-button.js"></script>
+  <!-- Animation Button Script -->
+  <script src="./components/scripts/animations-button.js"></script>
+  <!-- Mouse Trail Scripts -->
+  <script src="./components/scripts/animations-mouse-trail.js"></script>
+  <!-- Animated Cursor -->
+  <script src="./components/scripts/animated-cursor.js"></script>
+  <!-- Help Overlay -->
+  <script src="./components/scripts/help-button.js"></script>
+</body>
+</html>
